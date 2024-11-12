@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e9ecef; /* สีพื้นหลังของทั้งเว็บไซต์ */
+  color: #333; /* สีข้อความหลัก */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* เพิ่มสไตล์สำหรับ select */
+select {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #002d72; /* ขอบของ select */
+  border-radius: 4px;
+  background-color: #fff; /* พื้นหลังของ select */
+  color: #002d72; /* สีข้อความของ select */
+}
+
+/* สไตล์สำหรับ input และ textarea */
+input, textarea {
+  border: 1px solid #dee2e6; /* ขอบของ input และ textarea */
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 1rem;
+  color: #333; /* สีข้อความใน input และ textarea */
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #002d72; /* ขอบของ input และ select เมื่อ focus */
+}

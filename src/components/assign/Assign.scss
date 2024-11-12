@@ -1,0 +1,177 @@
+.assign-page {
+  padding: 40px;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+
+  .filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    label {
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    .form-control {
+      width: auto;
+      display: inline-block;
+    }
+  }
+
+  table {
+    width: 80%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    margin: 0 auto;
+
+    thead {
+      background-color: #f8f9fa;
+
+      th {
+        padding: 10px;
+        border: 1px solid #dee2e6;
+        font-size: 1rem;
+
+        &:nth-child(1) {
+          width: 20%; // Adjust width for Detail column
+        }
+
+        &:nth-child(2) {
+          width: 20%; // Adjust width for Owner column
+        }
+
+        &:nth-child(3) {
+          width: 15%; // Adjust width for Created At column
+        }
+
+        &:nth-child(4) {
+          width: 15%; // Adjust width for Deadline column
+        }
+
+        &:nth-child(5) {
+          width: 15%; // Adjust width for State column
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+
+        td {
+          padding: 10px;
+          border: 1px solid #dee2e6;
+          font-size: 1rem;
+          text-align: center; // Center-align text
+        }
+
+        .action-buttons {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+        }
+
+        .btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 5px;
+          border: 2px solid;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1rem;
+          text-align: center;
+          background: none;
+          color: #333;
+          transition: all 0.3s ease;
+          width: 40px; // Set a fixed width for all buttons
+          height: 40px; // Set a fixed height for all buttons
+          line-height: 0; // Remove line-height for icon centering
+
+          &.edit {
+            border-color: #007bff;
+            color: #007bff;
+
+            &:hover {
+              background-color: #007bff;
+              color: white;
+            }
+          }
+
+          &.delete {
+            border-color: #dc3545;
+            color: #dc3545;
+
+            &:hover {
+              background-color: #dc3545;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .form-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .form-inline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-end;
+      justify-content: center;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+
+        label {
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+
+        .form-control {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ced4da;
+          border-radius: 5px;
+        }
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}

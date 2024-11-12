@@ -1,0 +1,153 @@
+.employee-page {
+  padding: 40px;
+  padding-left: 15%;
+  padding-right: 15%;
+  position: relative;
+  z-index: 1;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #002d72;
+    position: relative;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 1px;
+      background-color: #ffffff;
+      display: block; /* Ensure the line is visible */
+      z-index: 1; /* Ensure the line is on top */
+    }
+  }
+
+  .row {
+    margin-bottom: 15px;
+  }
+
+  .form-label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ffffff;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .form-container {
+    background-color: #0000003b;
+    // background-color: #13184095;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 1;
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    box-shadow: 0 0 10px #090979, 0 0 10px #00ffef;
+    
+    h2 {
+      margin-bottom: 20px;
+      text-align: left;
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .form-check {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .form-check-input {
+      margin-left: 10px;
+    }
+    
+    .form-check-label {
+      margin-left: 10px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .button-group .btn {
+      border-radius: 0px;
+      margin-top: 40px;
+      border: 1px solid #ced4da;
+      box-shadow: 0 0 10px #090979, 0 0 10px #00ffef;
+      background: transparent;
+      color: #ffffff;
+      transition: background-color 0.5s ease;
+
+      &:hover {
+        background-color: #ffffff; // เปลี่ยนพื้นหลังเป็นสีขาวเมื่อ hover
+        color: #000000; // เปลี่ยนสีตัวหนังสือเป็นสีดำเมื่อ hover
+      }
+
+    }
+
+    .form-inline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-end;
+      justify-content: center;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+
+        label {
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+
+        .form-control {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ced4da;
+          border-radius: 5px;
+        }
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}

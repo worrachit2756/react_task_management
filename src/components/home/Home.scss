@@ -1,0 +1,28 @@
+// src/pages/Home.scss
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  color: #333; /* Text color */
+  text-align: center; /* Center align text */
+  padding: 20px; /* Padding around the content */
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    padding: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #ffffff00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    color: #ffffff;
+  }
+
+  p {
+    font-size: 1.25rem; /* Font size for the paragraph */
+    color: #ffffff; /* Light color for the paragraph text */
+  }
+}
